@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XD Magazine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Hero Section */
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover; /* Replace with actual image */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      animation: fadeIn 2s ease-in-out;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header p {
+      font-size: 1.8em;
+      margin-top: 20px;
+      animation: fadeIn 3s ease-in-out;
+      color: #FF6600; /* TNC's orange */
+    }
+
+    header h3 {
+      font-size: 2.5em;
+      margin-top: 10px;
+      color: #FF6600;
+      font-weight: 600;
+    }
+
+    header .intro-text {
+      font-size: 1.2em;
+      width: 80%;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+
+    /* Animation for fadeIn */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Section Styles */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #222;
+    }
+
+    section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3em;
+      color: #FF6600;
+      margin-bottom: 20px;
+    }
+
+    .subtopics {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .subtopic-card {
+      background-color: #333;
+      color: white;
+      width: 300px;
+      height: 350px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .subtopic-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .subtopic-card h3 {
+      font-family: 'Oswald', sans-serif;
+      margin: 15px 0;
+      color: #FF6600;
+    }
+
+    .subtopic-card p {
+      padding: 0 15px;
+      color: white;
+      font-size: 1em;
+    }
+
+    .subtopic-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section for XD Magazine -->
+<header>
+  <div>
+    <h1>Welcome to XD Magazine</h1>
+    <p>RISING THROUGH FILIPINO STORIES</p>
+    <h3>PIONEER | VISIONARY | INNOVATOR</h3>
+    <p class="intro-text">
+      A leading platform for Filipino storytelling, where we explore cultural narratives, wellness, and societal issues through powerful, thought-provoking articles. XD Magazine goes beyond boundaries to amplify Filipino voices worldwide.
+    </p>
+  </div>
+</header>
+
+<!-- Subtopics Section -->
+<section id="subtopics">
+  <h2>Explore Our Subtopics</h2>
+  <div class="subtopics">
+    <div class="subtopic-card">
+      <img src="https://via.placeholder.com/300x200?text=Iwas+Sawi" alt="Iwas Sawi Project">
+      <h3>IWAS SAWI PROJECT</h3>
+      <p>Deep narratives about human connections and emotions in Filipino culture.</p>
+    </div>
+    <div class="subtopic-card">
+      <img src="https://via.placeholder.com/300x200?text=Alam-At" alt="Alam-At">
+      <h3>ALAM-AT</h3>
+      <p>Stories of history and culture that have shaped the Filipino identity.</p>
+    </div>
+    <div class="subtopic-card">
+      <img src="https://via.placeholder.com/300x200?text=Outer+Space" alt="Outer Space">
+      <h3>OUTER SPACE</h3>
+      <p>Discover humor, lightheartedness, and the cosmic creativity of Filipino life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <p>&copy; 2024 XD Magazine | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
